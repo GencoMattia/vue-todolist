@@ -31,7 +31,7 @@
                     </ul>
                 </section>
                 <section class="new-task bar">
-                    <input type="text" name="new task" id="add-new-task" placeholder="Add a new task">
+                    <input type="text" v-model="newTaskText" @keyup.enter="createNewTask" placeholder="Add a new task">
                 </section>
             </div>
         </main>

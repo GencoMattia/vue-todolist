@@ -28,7 +28,9 @@ createApp({
                     text: "Armatura di Mithril +2",
                     done: false
                 },
-            ]
+            ],
+
+            newTaskText: "", 
         }
     },
 
@@ -45,6 +47,18 @@ createApp({
 
         removeTask(taskIndex){
             this.tasksList.splice(taskIndex, 1);
+        },
+
+        createNewTask() {
+            const newTask = [
+                text= "",
+                done= false
+            ];
+            if(this.newTaskText.trim() !== "") {
+                newTask.text = this.newTaskText.trim();
+                this.tasksList.push(newTask);
+                this.newTaskText = "";
+            }
         }
     }
 }).mount('#app')
