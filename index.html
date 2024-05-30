@@ -17,8 +17,8 @@
             <div class="main-container">
                 <section class="todo-list-wrapper">
                     <ul class="todo-list">
-                        <li class="task-item">
-                            
+                        <li v-for="(task, index) in tasksList" class="task-item">
+                            {{ task.text }}
                         </li>
                     </ul>
                 </section>
