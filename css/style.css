@@ -10,15 +10,22 @@
     padding-top: 5rem;
 }
 
-.task-item.done {
+.task-item {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.task-item span.done {
     text-decoration: line-through;
     color: gray;
 }
 
-ul {
-    list-style: none;
+.task-item i {
+    margin-left: auto;
 }
 
-.todo-list li {
-    margin-bottom: .5rem;
+ul {
+    list-style: none;
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue TodoList</title>
 
+    <!-- Fontawesome 6.5.2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,11 +20,13 @@
             <div class="main-container">
                 <section class="todo-list-wrapper">
                     <ul class="todo-list">
-                        <li @click="toggleDone(index)" 
+                        <li  
                         v-for="(task, index) in tasksList" 
-                        class="task-item"
-                        :class="task.done === true ? 'done' : ''">
-                            {{ task.text }}
+                        class="task-item">
+                            <span @click="toggleDone(index)" :class="task.done === true ? 'done' : ''">
+                                {{ task.text }}
+                            </span>
+                            <i class="fa-solid fa-square-minus"></i>
                         </li>
                     </ul>
                 </section>
