@@ -14,3 +14,11 @@
     text-decoration: line-through;
     color: gray;
 }
+
+ul {
+    list-style: none;
+}
+
+.todo-list li {
+    margin-bottom: .5rem;
+}
