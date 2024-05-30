@@ -15,3 +15,16 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 Bonus:
 1 - cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 2 -  aggiungere un altro bottone che permetta la modifica di un task gia' esistente
+
+
+
+----- PASSAGGI -----
+- creare una base di contenitori su html per contenere gli elementi vue
+- preparare gli i data in vue.
+    - un array di oggetti contenenti le tasks
+- aggiungere un method che inverta la key done di ogni oggetto da true a false e vice versa
+- agganciare con @click sull'elemento il method per sbarrare le task completate
+- creare un method che usando splice e l'indice dell'elemento cliccato rimuova l'oggetto
+- creare un elemento input in html.
+- v-model sull'imput collegato ad una variabile data.
+- creare una funzione legata all'input per aggiungere nuo nuovo oggetto alla lista con il value dell'imput come contenuto
