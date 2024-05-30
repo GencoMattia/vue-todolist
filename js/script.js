@@ -41,6 +41,10 @@ createApp({
                 this.tasksList[taskIndex].done = false;
                 console.log(this.tasksList[taskIndex].done); // Use 'this' here
             }
+        },
+
+        removeTask(taskIndex){
+            this.tasksList.splice(taskIndex, 1);
         }
     }
 }).mount('#app')

@@ -26,7 +26,7 @@
                             <span @click="toggleDone(index)" :class="task.done === true ? 'done' : ''">
                                 {{ task.text }}
                             </span>
-                            <i class="fa-solid fa-square-minus"></i>
+                            <i @click="removeTask(index)" id="remove-task-button" class="fa-solid fa-square-minus"></i>
                         </li>
                     </ul>
                 </section>
