@@ -9,3 +9,8 @@
     margin: 0 auto;
     padding-top: 5rem;
 }
+
+.task-item.done {
+    text-decoration: line-through;
+    color: gray;
+}

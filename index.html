@@ -17,7 +17,10 @@
             <div class="main-container">
                 <section class="todo-list-wrapper">
                     <ul class="todo-list">
-                        <li @click="toggleDone(index)" v-for="(task, index) in tasksList" class="task-item">
+                        <li @click="toggleDone(index)" 
+                        v-for="(task, index) in tasksList" 
+                        class="task-item"
+                        :class="task.done === true ? 'done' : ''">
                             {{ task.text }}
                         </li>
                     </ul>
