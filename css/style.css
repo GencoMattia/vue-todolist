@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -60,8 +66,21 @@ body {
     color: #999;
 }
 
-.task-item i {
-    margin-left: auto;
+/* Delete Button */
+.fa-square-minus {
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.2s;
+}
+
+.fa-square-minus:hover {
+    color: #c0392b;
+}
+
+/* New Task Input */
+.new-task.bar {
+    margin-top: 25px;
 }
 
 .new-task input {
