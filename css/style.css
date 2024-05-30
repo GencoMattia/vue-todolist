@@ -10,6 +10,10 @@
     padding-top: 5rem;
 }
 
+.todo-list-wrapper {
+    margin-bottom: 1rem;
+}
+
 .task-item {
     display: flex;
     /* justify-content: space-between; */
