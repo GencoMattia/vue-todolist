@@ -38,7 +38,6 @@ body {
 /* Todo List  */
 .todo-list {
     list-style: none;
-    padding: 0;
 }
 
 .task-item {
@@ -71,7 +70,7 @@ body {
 .fa-square-minus {
     color: #e74c3c;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     transition: color 0.2s;
 }
 
@@ -90,7 +89,7 @@ body {
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .new-task input:focus {
