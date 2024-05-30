@@ -30,5 +30,17 @@ createApp({
                 },
             ]
         }
+    },
+
+    methods: {
+        toggleDone(taskIndex) {
+            if (this.tasksList[taskIndex].done === false) {
+                this.tasksList[taskIndex].done = true;
+                console.log(this.tasksList[taskIndex].done); // Use 'this' here
+            } else {
+                this.tasksList[taskIndex].done = false;
+                console.log(this.tasksList[taskIndex].done); // Use 'this' here
+            }
+        }
     }
 }).mount('#app')
