@@ -60,21 +60,8 @@ body {
     color: #999;
 }
 
-/* Delete Button */
-.fa-square-minus {
-    color: #e74c3c;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: color 0.2s;
-}
-
-.fa-square-minus:hover {
-    color: #c0392b;
-}
-
-/* New Task Input */
-.new-task.bar {
-    margin-top: 25px;
+.task-item i {
+    margin-left: auto;
 }
 
 .new-task input {
