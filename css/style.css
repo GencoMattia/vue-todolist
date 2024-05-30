@@ -45,9 +45,11 @@ body {
 .task-item {
     display: flex;
     align-items: center;
-    padding: 15px;
+    margin-bottom: .2rem;
+    padding: 1rem;
     border-bottom: 1px solid #eee;
-    background-color: #fff;
+    border-radius: .5rem;
+    background-color: #f7cbf7c7;
     transition: background-color 0.2s;
 }
 
