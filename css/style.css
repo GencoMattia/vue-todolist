@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+.title {
+    text-align: center;
+    padding: 2rem;
+}
+
 .main-container {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 5rem;
 }
 
 .todo-list-wrapper {
